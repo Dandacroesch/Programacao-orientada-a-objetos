@@ -1,0 +1,37 @@
+import javax.swing.JOptionPane;
+public class Prova2 {
+    public static void main(String args[]) {
+        String dands;
+        float salario;
+        try {
+            dands = JOptionPane.showInputDialog("Entre com o salário");
+            salario = Float.parseFloat(dands);
+
+           // dp = ((salario/100)*11);
+
+        if(1500 >= salario  && salario < 1750){
+            JOptionPane.showMessageDialog(null, "valor do salario:" + (salario) + "\n valor do desconto:" + ((salario/100)*12) + "\nvalor do salario com desconto:" + ((salario/100)*12-salario));
+       
+                 
+
+        } else if(1750 >= salario  && salario < 2000){
+                JOptionPane.showMessageDialog(null, "valor do salario:" + (salario) + "\n valor do desconto:" + ((salario/100)*10) + "\nalor do salario com desconto:" + ((salario/100)*10-salario));
+           
+
+        } else if(2000 >= salario  && salario < 3000){
+                JOptionPane.showMessageDialog(null, "valor do salario:" + (salario) + "\n valor do desconto:" + ((salario/100)*17) + "\nvalor do salario com desconto:" + ((salario/100)*17-salario));
+     
+
+                 
+        } else{
+           JOptionPane.showMessageDialog(null, "valor do salario:" + (salario) + "\n valor do desconto:" + ((salario/100)*15 ) + "\nvalor do salario com desconto:" + ((salario/100)*12-salario));
+        }
+
+            }catch (NumberFormatException erro) {
+                JOptionPane.showMessageDialog(null,"Houve erro na conversão, digite apenas caracteres numéricos" 
+                    + erro.toString());
+            }
+            System.exit(0);
+             
+        }
+    }
