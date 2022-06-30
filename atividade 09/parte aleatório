@@ -1,0 +1,9 @@
+import javax.swing.*;
+
+public class Aleatorio {
+    public static int[] Array(int n){
+        int vet[] = new int[n];
+        for(int i=0; i<n; i++) vet[i] = (int)(Math.random()*1000);
+        return vet;
+    }
+}
