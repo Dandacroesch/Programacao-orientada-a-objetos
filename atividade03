@@ -1,0 +1,23 @@
+import java.util.*;
+public class Operadores2
+{
+    public static void main (String args[]){
+        int lider=0, lanterna=0;
+        Scanner sc;
+        try{
+            System.out.println("Entre com o lider");
+            sc = new Scanner(System.in);
+            lider = sc.nextInt();
+
+            System.out.println("Entre com a lanterna ");
+            sc = new Scanner(System.in);
+            lanterna = sc.nextInt();
+
+
+            System.out.println("A quantidade de vitórtias será " + (lider-lanterna)/3);
+    
+        } catch(NumberFormatException e){
+            System.out.println("Houve erro na conversão, digite apenas caracteres numericos");
+        }
+    }
+}
