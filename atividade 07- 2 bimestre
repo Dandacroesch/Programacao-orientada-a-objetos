@@ -1,0 +1,40 @@
+import javax.swing.JOptionPane;
+
+
+public class Atividade07{
+public static void main (String args []) {
+String aux;
+int m1, m2;
+aux = JOptionPane.showInputDialog("Entre com o 1 numero: ");
+m1 = Integer.parseInt(aux);
+
+aux = JOptionPane.showInputDialog("Entre com o 2 numero: ");
+m2 = Integer.parseInt(aux);
+
+JOptionPane.showMessageDialog(null,"Resultado da soma: " + Atividade07.somar(m1, m2));
+JOptionPane.showMessageDialog(null,"Resultado da subtração: " + Atividade07.sub(m1, m2));
+JOptionPane.showMessageDialog(null,"Resultado da divisão: " + Atividade07.divi(m1, m2));
+JOptionPane.showMessageDialog(null,"Resultado da multiplicação: " + Atividade07.mult(m1, m2));
+
+}
+public static int somar(int m1, int m2) {
+int resultado;
+resultado = m1 + m2;
+return resultado;
+}
+public static int sub(int m1, int m2) {
+int resultado;
+resultado = m1 - m2;
+return resultado;
+}
+public static int divi(int m1, int m2) {
+int resultado;
+resultado = m1 / m2;
+return resultado;
+}
+public static int mult(int m1, int m2) {
+int resultado;
+resultado = m1 * m2;
+return resultado;
+}
+}
