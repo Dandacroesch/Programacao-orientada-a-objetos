@@ -1,0 +1,9 @@
+public class dandara
+{
+     // método main inicia a execução do aplicativo Jave
+     public static void main(String[] args)
+     {
+         System.out.println("Dandara é linda!");
+         System.out.println("Dandara é maravilhosa!");
+     }//fim do método  main
+}//fim da classe PrimeiroProgramaJava
