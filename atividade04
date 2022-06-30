@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+
+public class Ope{
+	public static void main(String args[]) {
+		String aux;
+		float prova1, prova2, notadotrabalho, media;
+		try {
+			aux = JOptionPane.showInputDialog("prova 1");
+			prova1 = Float.parseFloat(aux);
+			
+			aux = JOptionPane.showInputDialog("prova 2");
+			prova2 = Float.parseFloat(aux);
+			
+            aux = JOptionPane.showInputDialog("nota do trabalho");
+		    notadotrabalho = Float.parseFloat(aux);
+			
+            media= (prova1 + prova2 + notadotrabalho) /3;
+        
+			JOptionPane.showMessageDialog(null, "Á media do aluno foi " + media);
+		} catch (NumberFormatException erro) {
+			JOptionPane.showMessageDialog(null,"Houve erro na conversão, digite apenas caracteres numéricos" 
+				+ erro.toString());
+		}
+		System.exit(0);
+	}
+}
