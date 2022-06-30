@@ -1,0 +1,14 @@
+public class Atividade5 {
+    public static void main(String[] args) {
+    int[][] matriz = new int [40][40];
+    
+    for (int linha = 0; linha < matriz.length; linha++){
+    for (int coluna = 0; coluna < matriz[linha].length; coluna++){
+    int num = (int) (Math.random() * 256);
+    matriz[linha][coluna] = num;
+    System.out.println("[" + linha + "," + coluna + "]" 
+    + matriz[linha][coluna]);
+    }
+    }
+    }
+    }
