@@ -1,0 +1,24 @@
+import javax.swing.JOptionPane;
+public class Parte {
+    public static void main(String args[]) {
+        String dands;
+		float salario, dp;
+		try {
+			dands = JOptionPane.showInputDialog("Entre com o salário");
+			salario = Float.parseFloat(dands); 
+
+            dp = ((salario/100)*11);
+
+            if(dp > 318){
+            JOptionPane.showInputDialog("erro");
+        
+             } else {
+                JOptionPane.showInputDialog(null," desconto : ", dp );
+            }
+            }catch (NumberFormatException erro) {
+                JOptionPane.showMessageDialog(null,"Houve erro na conversão, digite apenas caracteres numéricos" 
+                    + erro.toString());
+            }
+            System.exit(0);
+             }
+         }
