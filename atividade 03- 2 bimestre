@@ -1,0 +1,42 @@
+import javax.swing.*;
+
+
+public class Atividade2 {
+
+public static void main(String args []){
+
+String nome, aux_idade, lista = " ";
+
+int idade = 0, contador_pessoas = 1;
+
+
+while(contador_pessoas < 11){
+
+nome = (String) JOptionPane.showInputDialog("Diga seu nome? ");
+
+aux_idade = (String) JOptionPane.showInputDialog("Diga sua idade? ");
+
+idade = Integer.parseInt(aux_idade);
+
+contador_pessoas++;
+
+if(idade >=18){
+
+//lista
+
+lista += "Nome" + nome + "\nIdade: " + idade + "\n";
+
+} 
+
+}
+
+JOptionPane.showMessageDialog(null, lista);
+
+
+System.exit(0);
+
+
+}
+
+
+}
