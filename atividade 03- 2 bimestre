@@ -1,0 +1,34 @@
+import java.text.DecimalFormat;
+import javax.swing.*;
+import java.util.*;
+import java.util.stream.*;
+import java.io.*;
+
+public class Atividade3 {
+public static void main(String[] args) {
+int[] inteiro = new int[5];
+String lista = " ";
+int soma = 0, media = 0;
+for (int d = 0; d < inteiro.length; d++) {
+int nota = Integer.parseInt(JOptionPane.showInputDialog("Digite a sua nota:"));
+inteiro[d] = nota;
+soma = soma + inteiro[d];
+
+}
+for(int p=0; p<5; p++){
+for (int k=p+1; k<5; k++){
+if(inteiro[p] < inteiro[k]){
+inteiro[p] = inteiro[k] + inteiro[p];
+inteiro[k] = inteiro[p] - inteiro[k];
+inteiro[p] = inteiro[p] - inteiro[k];
+
+}
+}
+lista +="Nota: " + inteiro[p] + "\n";
+}
+media = soma/5;
+
+JOptionPane.showMessageDialog(null, lista + "Média: " + media);
+
+}
+}
