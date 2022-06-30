@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+import javax.swing.*;
+ 
+public class MeusArrays {
+   public static void main(String[] args) {
+       int num = 0, num1 = 0;
+
+       num = Integer.parseInt(JOptionPane.showInputDialog("Informe o número que deseja verificar: "));
+       JOptionPane.showMessageDialog(null,"Aparece: " + Existe.Existe1(num));
+
+       num1 = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantiade de posições que você deseja no seu array: "));
+       JOptionPane.showMessageDialog(null,"Array: " + Arrays.toString(Aleatorio.Array(num1)));
+   }
+}
