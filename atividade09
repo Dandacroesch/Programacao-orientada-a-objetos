@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+public class Atividade09 {
+	public static void main (String [] args){
+		Object[] op = {"hatch" , "sedans" , "motocicletas" , "caminhonetes"};
+		String resp = (String)JOptionPane.showInputDialog(null, 	
+			"Que carro você deseja\n", "Pesquisa", 						
+			JOptionPane.PLAIN_MESSAGE, null, op, "Erro");
+		String dands;
+        switch(resp)
+        {
+            case "hatch":
+            dands= "Compra efetuada com sucesso";
+            break;
+            case "Erro":
+            dands= "Não trabalhamos com este tipo de automóvel aqui";
+            break;
+            default:
+            dands= "Tem certeza que é este modelo que deseja?";
+            break;
+
+        }JOptionPane.showMessageDialog(null, dands);
+	}
+}
