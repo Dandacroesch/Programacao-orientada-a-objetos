@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+
+public class Atividade01 {
+	public static void main(String args []){
+		String  aux, total2 = "";
+		int mat, tabuada, total;
+		
+	aux= JOptionPane.showInputDialog(null," informe o número desejado: ");
+	mat= Integer.parseInt(aux);
+
+	for (int cont = 0; cont <= 10; cont++) {
+		total= mat*cont;
+		total2 = total2 + "" + mat + " X " + cont + " = " + total + "\n";
+	}
+		JOptionPane.showMessageDialog(null, total2);
+	
+	}
+}
