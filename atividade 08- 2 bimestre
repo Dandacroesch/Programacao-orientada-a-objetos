@@ -1,0 +1,104 @@
+import javax.swing.*;
+
+public class atividade08 {
+    public static void main(String args[]) {
+        while (true) {
+            Float Mes, Idioma;
+            Mes = Float.parseFloat(JOptionPane.showInputDialog(null, "Número referente ao mês desejado: "));
+
+            if (Mes > 12 || Mes < 1) {
+                JOptionPane.showMessageDialog(null, "Informe apenas valores válidos");
+                System.exit(1);
+            }
+
+            Idioma = Float.parseFloat(JOptionPane.showInputDialog(null, "Idioma\n 1 = PT-BR \n 2 = EN "));
+
+            if (Idioma < 1 || Idioma > 2) {
+                JOptionPane.showMessageDialog(null, "Informe apenas valores válidos");
+                System.exit(1);
+            }
+
+            if (Idioma == 1) {
+                if (Mes == 1) {
+                    JOptionPane.showMessageDialog(null, "Janeiro");
+                }
+                if (Mes == 2) {
+                    JOptionPane.showMessageDialog(null, "Fevereiro");
+                }
+                if (Mes == 3) {
+                    JOptionPane.showMessageDialog(null, "Março");
+                }
+                if (Mes == 4) {
+                    JOptionPane.showMessageDialog(null, "Abril");
+                }
+                if (Mes == 5) {
+                    JOptionPane.showMessageDialog(null, "Maio");
+                }
+                if (Mes == 6) {
+                    JOptionPane.showMessageDialog(null, "Junho");
+                }
+                if (Mes == 7) {
+                    JOptionPane.showMessageDialog(null, "Julho");
+                }
+                if (Mes == 8) {
+                    JOptionPane.showMessageDialog(null, "Agosto");
+                }
+                if (Mes == 9) {
+                    JOptionPane.showMessageDialog(null, "Setembro");
+                }
+                if (Mes == 10) {
+                    JOptionPane.showMessageDialog(null, "Outubro");
+                }
+                if (Mes == 11) {
+                    JOptionPane.showMessageDialog(null, "Novembro");
+                }
+                if (Mes == 12) {
+                    JOptionPane.showMessageDialog(null, "Dezembro");
+                }
+            }
+
+            if (Idioma == 2) {
+                if (Mes == 1) {
+                    JOptionPane.showMessageDialog(null, "January");
+                }
+                if (Mes == 2) {
+                    JOptionPane.showMessageDialog(null, "February");
+                }
+                if (Mes == 3) {
+                    JOptionPane.showMessageDialog(null, "March");
+                }
+                if (Mes == 4) {
+                    JOptionPane.showMessageDialog(null, "April");
+                }
+                if (Mes == 5) {
+                    JOptionPane.showMessageDialog(null, "May");
+                }
+                if (Mes == 6) {
+                    JOptionPane.showMessageDialog(null, "June");
+                }
+                if (Mes == 7) {
+                    JOptionPane.showMessageDialog(null, "July");
+                }
+                if (Mes == 8) {
+                    JOptionPane.showMessageDialog(null, "August");
+                }
+                if (Mes == 9) {
+                    JOptionPane.showMessageDialog(null, "September");
+                }
+                if (Mes == 10) {
+                    JOptionPane.showMessageDialog(null, "October");
+                }
+                if (Mes == 11) {
+                    JOptionPane.showMessageDialog(null, "November");
+                }
+                if (Mes == 12) {
+                    JOptionPane.showMessageDialog(null, "December");
+                }
+
+            }
+
+        }
+
+    }
+
+}
