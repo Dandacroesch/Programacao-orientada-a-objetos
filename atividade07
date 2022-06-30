@@ -1,0 +1,33 @@
+import javax.swing.JOptionPane;
+public class Dands{
+	public static void main(String args[]) {
+		String aux, nome ;
+		float produto1;
+        double desconto;
+		try {
+
+			nome = JOptionPane.showInputDialog("Insira o nome do Produto");
+			
+			
+			aux = JOptionPane.showInputDialog("Valor do Produto");
+			produto1 = Float.parseFloat(aux);
+            if(produto1>=50 && produto1<200){
+                desconto = produto1 - (produto1* 0.05);
+            }else if(produto1>=200 && produto1<500){
+                desconto = produto1 - (produto1* 0.06);
+            }else if(produto1>=500 && produto1<1000){
+                desconto = produto1 - (produto1* 0.07);
+            }else if(produto1>=1000){
+			    desconto = produto1 - (produto1* 0.08);
+            }else {
+                desconto = produto1;
+            }
+            
+			JOptionPane.showMessageDialog(null, "Nome do Produto: " + nome + " \n Valor original do produto: R$ " + produto1 + "\n Valor do produto com desconto: R$ "  + desconto );
+		} catch (NumberFormatException erro) {
+			JOptionPane.showMessageDialog(null,"Houve erro na conversão, digite apenas caracteres numéricos" 
+				+ erro.toString());
+		}
+		System.exit(0);
+	}
+}
