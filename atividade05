@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+public class Ope{
+	public static void main(String args[]) {
+		String aux;
+		float produto1, desconto, valordesconto;
+		try {
+			aux = JOptionPane.showInputDialog("produto 1");
+			produto1 = Float.parseFloat(aux);
+			
+			aux = JOptionPane.showInputDialog("desconto");
+			desconto = Float.parseFloat(aux);
+			
+		    valordesconto= produto1 * (desconto /100);
+
+			JOptionPane.showMessageDialog(null, "O valor do desconto será " + valordesconto + " \n o valor do produto com desconto será " + (produto1 - valordesconto));
+		} catch (NumberFormatException erro) {
+			JOptionPane.showMessageDialog(null,"Houve erro na conversão, digite apenas caracteres numéricos" 
+				+ erro.toString());
+		}
+		System.exit(0);
+	}
+}
