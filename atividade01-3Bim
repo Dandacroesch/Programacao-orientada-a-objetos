@@ -1,0 +1,57 @@
+import java.text.DecimalFormat;
+import javax.swing.*;
+import java.util.*;
+import java.util.stream.*;
+import java.io.*;
+
+public class Atividade1_3b {
+public static void main(String[] args) {
+int poltrona, resp = 0, dands=0;
+String placa;
+boolean[] voo = new boolean[10];
+boolean[] voo2 = new boolean[10];
+
+
+do { 
+resp = Integer.parseInt(JOptionPane.showInputDialog("MENU\n1- Primeira Classe\n2-Classe Econômica\n3-Listar situação atual Classe Econômica\n4-Listar situação atual Primeira Classe\n5-Encerrar o programa\nDigite o número correspondente a sua busca: \n"));
+switch (resp) {
+case 1:
+dands=0;
+for(int i = 0; i < voo.length; i++){
+if(voo[i] == false ){
+poltrona = i + 1;
+voo[i] = true;
+dands=1;
+JOptionPane.showMessageDialog(null,"Sua poltona é " + poltrona + "\nPrimeira Classe");
+break;
+}
+}
+if(dands == 0) {
+JOptionPane.showMessageDialog(null,"Não há mais poltronas disponíveis nesse voo, o próximo voo parte em 3 horas");
+break;
+}
+break;
+case 2:
+dands=0;
+for(int i = 0; i < voo2.length; i++){
+if(voo2[i] == false ){
+poltrona = i + 1;
+voo2[i] = true;
+dands=1;
+JOptionPane.showMessageDialog(null,"Sua poltona é " + poltrona + "\nClasse Econômica");
+break; } 
+}
+if(dands == 0) {
+JOptionPane.showMessageDialog(null,"Não há mais poltronas disponíveis nesse voo, o próximo voo parte em 3 horas");
+}
+break;
+case 3:
+JOptionPane.showMessageDialog(null, "False = Vazio, True = Ocupado" + Arrays.toString(voo2));
+break;
+case 4:
+JOptionPane.showMessageDialog(null, "False = Vazio, True = Ocupado\n" + Arrays.toString(voo));
+break;
+}
+} while(resp != 5); 
+}
+}
