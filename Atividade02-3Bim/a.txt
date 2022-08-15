@@ -1,1 +1,13 @@
-aaa
+import java.util.concurrent.TimeUnit;
+public class atividade2 {
+  public static void main(String[] args) {
+      int BombaDagua;
+      Bomba bomba1 = new Bomba();
+      bomba1.ligar();
+      bomba1.mostrar();
+      bomba1.mostrarTempo(5);
+      bomba1.desligar();
+      bomba1.mostrar();
+  }
+ 
+}
